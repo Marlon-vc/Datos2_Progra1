@@ -2,17 +2,9 @@
 #include "../logic/controller.h"
 #include "pagination.h"
 
-Pagination::Pagination(Controller &c): openWindow("Click!"), controller(c) {
-    openWindow.signal_clicked().connect(sigc::mem_fun(*this, &Pagination::open));
-    add(openWindow);
+Pagination::Pagination(Controller &c): controller(c) {
     show_all_children();
     set_title("Pagination");
-}
-
-Pagination::~Pagination() {}
-
-void Pagination::open() {
-    std::cout << "Hello\n";
 }
 
 // Code to open a secondary window

@@ -10,11 +10,8 @@ class InfiniteScroll: public Gtk::Window {
         InfiniteScroll();
         InfiniteScroll(Controller &c);
         virtual ~InfiniteScroll();
-        void run(std::vector<std::string> data);
     private:
         Controller &controller;
-        std::vector<std::string> data;
-        Gtk::Button openWindow;
 };
 
 #endif

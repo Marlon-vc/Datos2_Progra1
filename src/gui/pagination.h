@@ -7,13 +7,10 @@
 
 class Pagination: public Gtk::Window {
     public:
-        Pagination();
         Pagination(Controller &c);
         virtual ~Pagination();
     private:
         Controller &controller;
-        Gtk::Button openWindow;
-        void open();
 };
 
 #endif

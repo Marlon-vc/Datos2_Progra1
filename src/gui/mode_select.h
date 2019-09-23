@@ -11,7 +11,6 @@
 
 class ModeSelect: public Gtk::Window {
     public:
-        ModeSelect();
         ModeSelect(Controller &controller);
         virtual ~ModeSelect();
     private:
