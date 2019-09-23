@@ -1,11 +1,6 @@
 #include "controller.h"
 
-Controller::Controller() {}
-
-Controller& Controller::getInstance() {
-    static Controller instance;
-    return instance;
-}
+Controller::Controller(): selectWindow(*this), paginationWindow(*this), scrollWindow(*this) {}
 
 void Controller::openWindow(int control_flag) {
     if (control_flag == 1) {
@@ -28,10 +23,4 @@ void Controller::modeSelectWindow() {
 
 void Controller::init() {
     modeSelectWindow();
-}
-
-int main() {
-    Controller &controller = Controller::getInstance();
-    controller.init();
-    return 0;
 }

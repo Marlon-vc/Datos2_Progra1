@@ -7,6 +7,7 @@
 
 class Pagination: public Gtk::Window {
     public:
+        Pagination();
         Pagination(Controller &c);
         virtual ~Pagination();
     private:

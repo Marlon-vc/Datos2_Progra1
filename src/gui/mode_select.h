@@ -7,11 +7,11 @@
 #include <gtkmm-3.0/gtkmm/image.h>
 #include <gtkmm-3.0/gtkmm/label.h>
 #include <gtkmm-3.0/gtkmm/box.h>
-#include <iostream>
 #include "../logic/controller.h"
 
 class ModeSelect: public Gtk::Window {
     public:
+        ModeSelect();
         ModeSelect(Controller &controller);
         virtual ~ModeSelect();
     private:
