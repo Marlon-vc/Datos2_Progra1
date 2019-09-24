@@ -1,4 +1,4 @@
-#include "csv_parser.h"
+#include "csv_parser.hpp"
 
 CSVParser::CSVParser(std::string file, std::string delimiter=",") {
     file_path = file;

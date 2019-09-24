@@ -1,4 +1,4 @@
-#include "data_downloader.h"
+#include "data_downloader.hpp"
 
 std::string DataDownloader::download(std::string url) {
     return download(url.c_str());

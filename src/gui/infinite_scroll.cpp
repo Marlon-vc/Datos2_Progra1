@@ -1,4 +1,4 @@
-#include "infinite_scroll.h"
+#include "infinite_scroll.hpp"
 
 InfiniteScroll::InfiniteScroll() {
     set_title("Scroll");

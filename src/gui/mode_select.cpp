@@ -1,4 +1,4 @@
-#include "mode_select.h"
+#include "mode_select.hpp"
 
 ModeWindow::ModeWindow():
 container(Gtk::ORIENTATION_VERTICAL),

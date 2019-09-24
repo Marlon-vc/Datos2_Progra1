@@ -1,4 +1,4 @@
-#include "pagination.h"
+#include "pagination.hpp"
 
 Pagination::Pagination() {
     set_title("Pagination");

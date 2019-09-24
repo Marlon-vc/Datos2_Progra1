@@ -1,4 +1,4 @@
-#include "normal_window.h"
+#include "normal_window.hpp"
 
 NormalWindow::NormalWindow() {
     set_title("No pagination");
