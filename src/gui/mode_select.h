@@ -1,26 +1,26 @@
-#ifndef MODE_SELECT_WINDOW
-#define MODE_SELECT_WINDOW
+#ifndef MODE_WINDOW
+#define MODE_WINDOW
 
-#include <gtkmm-3.0/gtkmm/window.h>
+#include <gtkmm-3.0/gtkmm/application.h>
 #include <gtkmm-3.0/gtkmm/button.h>
-#include <gdkmm-3.0/gdkmm/pixbuf.h>
-#include <gtkmm-3.0/gtkmm/image.h>
 #include <gtkmm-3.0/gtkmm/label.h>
 #include <gtkmm-3.0/gtkmm/box.h>
-#include "../logic/controller.h"
+#include <gtkmm-3.0/gtkmm/window.h>
+#include <gtkmm-3.0/gtkmm/image.h>
+#include <iostream>
 
-class ModeSelect: public Gtk::Window {
+class ModeWindow: public Gtk::Window {
     public:
-        ModeSelect(Controller &controller);
-        virtual ~ModeSelect();
+        ModeWindow();
+        virtual ~ModeWindow();
+        static void open();
     private:
-        Controller &controller;
         Gtk::Button paginationMode, scrollMode, normalMode;
         Gtk::Box modesContainer, container;
         Gtk::Label msg;
-        void pag();
-        void scroll();
-        void normal();
+        void open_pag();
+        void open_scroll();
+        void open_normal();
         Glib::RefPtr<Gdk::Pixbuf> load_image(std::string path, int width, int height);
 };
 

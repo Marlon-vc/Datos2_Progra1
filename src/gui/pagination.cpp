@@ -1,10 +1,18 @@
-
-#include "../logic/controller.h"
 #include "pagination.h"
 
-Pagination::Pagination(Controller &c): controller(c) {
-    show_all_children();
+Pagination::Pagination() {
     set_title("Pagination");
+    show_all_children();
+}
+
+Pagination::~Pagination() {
+    
+}
+
+void Pagination::open() {
+    auto app = Gtk::Application::create();
+    static Pagination window;
+    app->run(window);
 }
 
 // Code to open a secondary window

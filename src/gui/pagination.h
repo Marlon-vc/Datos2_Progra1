@@ -3,14 +3,13 @@
 
 #include <gtkmm-3.0/gtkmm/window.h>
 #include <gtkmm-3.0/gtkmm/button.h>
-#include "../logic/controller.h"
 
 class Pagination: public Gtk::Window {
     public:
-        Pagination(Controller &c);
+        Pagination();
         virtual ~Pagination();
+        static void open();
     private:
-        Controller &controller;
 };
 
 #endif
